@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "name": "wcf-date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for converting between date objects and WCF date representation strings",
   "main": "lib/wcf-date.js",
   "scripts": {
