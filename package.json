@@ -22,16 +22,15 @@
   "contributors": [
     "Jeff Jacobson (https://github.com/JeffJacobson/)"
   ],
-  "jspm":{
-    "main": "es2015/wcf-date.js"
-  },
+  "jsnext:main": "es2015/wcf-date.js",
   "license": "Unlicense",
   "dependencies": {
+  },
+  "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.13.2",
     "typescript": "^1.8.10"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WSDOT-GIS/wcf-date.git"
