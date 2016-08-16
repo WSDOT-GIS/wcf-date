@@ -1,11 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "name": "wcf-date",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities for converting between date objects and WCF date representation strings",
   "main": "lib/wcf-date.js",
   "scripts": {
-    "build": "tsc && babel es2015 -d lib",
+    "build": "echo Transpiling TypeScript to ES2015... && tsc && echo Transpiling ES2015 to ES5... && babel es2015 -d lib",
     "prepublish": "npm run build",
     "test": "jasmine"
   },
@@ -15,6 +15,9 @@
     "conversion",
     "parse"
   ],
+  "directories": {
+    "test": "spec"
+  },
   "author": "WSDOT",
   "contributors": [
     "Jeff Jacobson (https://github.com/JeffJacobson/)"
