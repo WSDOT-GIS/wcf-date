@@ -6,7 +6,7 @@
   "main": "lib/wcf-date.js",
   "scripts": {
     "build": "tsc && babel es2015 -d lib",
-    "preinstall": "npm run build",
+    "prepublish": "npm run build",
     "test": "jasmine"
   },
   "keywords": [
