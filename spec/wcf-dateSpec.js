@@ -1,5 +1,5 @@
 /*eslint-env jasmine */
-let wcfDate = require("../lib/wcf-date");
+let wcfDate = require("../dist/wcf-date");
 
 describe("wcf-date", function () {
     const s = "/Date(1408431600000-0700)/";

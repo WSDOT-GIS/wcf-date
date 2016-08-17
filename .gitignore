@@ -2,8 +2,8 @@
 logs
 *.log
 npm-debug.log*
-es2015/*.js
-lib/*.js
+es2015/*
+dist/*
 
 # Runtime data
 pids

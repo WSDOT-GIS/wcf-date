@@ -1,17 +1,23 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "name": "wcf-date",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utilities for converting between date objects and WCF date representation strings",
-  "main": "lib/wcf-date.js",
+  "main": "dist/wcf-date.js",
   "scripts": {
-    "build": "echo Transpiling TypeScript to ES2015... && tsc && echo Transpiling ES2015 to ES5... && babel es2015 -d lib",
+    "clean": "rm es2015/* dist/* && rmdir dist es2015",
+    "clean:windows": "del /Q dist\\* /Q es2015\\*",
+    "copydts": "echo copy d.ts... && cp --force es2015/wcf-date.d.ts dist",
+    "copydts:windows": "echo copy d.ts... && cp --force es2015/wcf-date.d.ts dist",
+    "build:common": "echo Transpiling TypeScript to ES2015... && tsc && echo Transpiling ES2015 to ES5... && babel es2015 -d dist",
+    "build": "npm run build:common && npm run copydts",
+    "build:windows": "npm run build:common && npm run copydts:windows",
     "prepublish": "npm run build",
     "test": "jasmine"
   },
   "files": [
     "wcf-date.ts",
-    "lib",
+    "dist",
     "es2015"
   ],
   "keywords": [

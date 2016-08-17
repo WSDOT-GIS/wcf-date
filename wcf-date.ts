@@ -1,4 +1,10 @@
 /**
+ * Utility functions for converting between Date
+ * objects and WCF date representation strings.
+ * @module wcf-date
+ * */
+
+/**
  * Parses a WCF date string into a Date object.
  * @param {string} wcfDate - WCF date string.
  * @example
