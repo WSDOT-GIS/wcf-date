@@ -4,12 +4,11 @@
   "version": "1.0.7",
   "description": "Utilities for converting between date objects and WCF date representation strings",
   "main": "dist/wcf-date.js",
-  "typings": "dist/wcf-date.d.ts",
+  "typings": "es2015/wcf-date",
   "scripts": {
-    "clean": "node \"build-scripts/clean\"",
-    "copydts": "node \"build-scripts/copydts\"",
-    "build:common": "echo Transpiling TypeScript to ES2015... && tsc && echo Transpiling ES2015 to ES5... && babel es2015 -d dist",
-    "build": "npm run clean && npm run build:common && npm run copydts",
+    "clean": "node build-scripts/clean",
+    "build:main": "tsc && babel es2015 -d dist",
+    "build": "npm run clean && npm run build:main",
     "prepublish": "npm run build",
     "test": "jasmine"
   },
@@ -17,7 +16,6 @@
     "node": ">=6"
   },
   "files": [
-    "wcf-date.ts",
     "dist",
     "es2015"
   ],
