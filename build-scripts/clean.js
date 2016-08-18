@@ -14,7 +14,7 @@ function deleteDirectory(dir) {
     // Check to see if the directory exists.
     fs.access(dir, (accessErr) => {
         if (accessErr) {
-            console.error(accessErr);
+            console.log(`${dir} does not exist. Skipping deletion.`);
             return;
         }
 
