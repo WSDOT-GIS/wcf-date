@@ -1,10 +1,5 @@
 {
-  "$schema": "http://json.schemastore.org/typings",
   "name": "wcf-date",
-  "main": "dist/wcf-date.d.ts",
-  "files": [
-    "es2015/wcf-date.d.ts"
-  ],
   "dependencies": {},
   "globalDevDependencies": {
     "fs-extra": "registry:dt/fs-extra#0.0.0+20160517121359",

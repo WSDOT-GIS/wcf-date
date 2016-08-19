@@ -1,25 +1,8 @@
 {
-    "env": {
-        "node": true
-    },
-    "extends": "eslint:recommended",
-    "rules": {
-        "react/jsx-sort-prop-types": "off",
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "quotes": [
-            "off",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
-    }
+    "extends": "standard",
+    "installedESLint": true,
+    "plugins": [
+        "standard",
+        "promise"
+    ]
 }

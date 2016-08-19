@@ -8,6 +8,9 @@
         "outDir": "es2015"
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "lib",
+        "build-scripts",
+        "es2015"
     ]
 }

@@ -1,23 +1,21 @@
 {
-  "$schema": "http://json.schemastore.org/package",
   "name": "wcf-date",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Utilities for converting between date objects and WCF date representation strings",
-  "main": "dist/wcf-date.js",
-  "typings": "es2015/wcf-date",
+  "main": "./lib/wcf-date.js",
+  "typings": "./lib/wcf-date.d.ts",
   "scripts": {
-    "clean": "node build-scripts/clean",
-    "build:main": "tsc && babel es2015 -d dist",
-    "build": "npm run clean && npm run build:main",
-    "prepublish": "npm run build",
+    "build": "tsc && babel es2015 -d lib",
+    "prepublish": "npm run build && node build-scripts/copydts.js",
     "test": "jasmine"
   },
   "engines": {
     "node": ">=6"
   },
   "files": [
-    "dist",
-    "es2015"
+    "lib",
+    "es2015",
+    "typings.json"
   ],
   "keywords": [
     "WCF",
@@ -26,6 +24,7 @@
     "parse"
   ],
   "directories": {
+    "lib": "lib",
     "test": "spec"
   },
   "author": "WSDOT",
@@ -37,13 +36,10 @@
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.11.4",
-    "babel-eslint": "^6.1.2",
     "babel-preset-es2015": "^6.13.2",
-    "eslint": "^3.3.1",
-    "eslint-config-defaults": "^9.0.0",
-    "eslint-config-standard": "^5.3.5",
+    "eslint": "^3.4.0",
+    "eslint-config-standard": "^6.0.0",
     "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-react": "^6.1.2",
     "eslint-plugin-standard": "^2.0.0",
     "fs-extra": "^0.30.0",
     "jasmine": "^2.4.1",
