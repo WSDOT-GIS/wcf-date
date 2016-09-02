@@ -1,8 +1,0 @@
-{
-  "name": "wcf-date",
-  "dependencies": {},
-  "globalDevDependencies": {
-    "fs-extra": "registry:dt/fs-extra#0.0.0+20160517121359",
-    "node": "registry:dt/node#6.0.0+20160818175514"
-  }
-}

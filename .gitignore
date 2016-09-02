@@ -2,9 +2,6 @@
 logs
 *.log
 npm-debug.log*
-es2015/*
-lib/*
-typings
 
 # Runtime data
 pids
