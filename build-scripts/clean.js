@@ -1,4 +1,4 @@
-/*eslint no-console:off*/
+/* eslint no-console:off */
 
 // Deletes files created by a previous build.
 
