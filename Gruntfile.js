@@ -12,6 +12,12 @@ module.exports = function (grunt) {
         files: {
           'lib/wcf-date.js': 'es2015/wcf-date.js'
         }
+      },
+      spec: {
+        files: {
+          'spec/SampleAlerts.js': 'spec/SampleAlerts.es6',
+          'spec/wcf-dateSpec.js': 'spec/wcf-dateSpec.es6'
+        }
       }
     },
     copy: {

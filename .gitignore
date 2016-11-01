@@ -3,6 +3,7 @@ logs
 *.log
 npm-debug.log*
 .tscache
+spec/**/*.js
 
 # Runtime data
 pids
