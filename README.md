@@ -29,6 +29,14 @@ let wcfDate = require("wcf-date");
 <script src="node_modules/wcf-date/lib/wcf-date.js" />
 ```
 
+### Typescript ###
+
+Typescript definitions are included: `lib/wcf-date.d.ts`. You may need to create a new type definition file to your project and add the following:
+
+```typescript
+/// <reference path="node_modules/wcf-date/lib/wcf-date.d.ts" />
+```
+
 ### Demo ###
 
 ```javascript
