@@ -1,5 +1,9 @@
 /* eslint-env jasmine */
 
+/* eslint-disable spaced-comment */
+/// <reference path="..\node_modules\@types\jasmine\index.d.ts" />
+/* eslint-enable spaced-comment */
+
 import { parseWcfDate, toWcfDateString } from '../lib/wcf-date'
 import alerts from './SampleAlerts'
 
