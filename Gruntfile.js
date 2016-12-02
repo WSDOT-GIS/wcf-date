@@ -30,8 +30,18 @@ module.exports = function (grunt) {
     clean: {
       precompile: ['lib/**', 'es2015/**'],
       postcompile: ['es2015/*.d.ts']
+    },
+    jasmine: {
+      default: {
+        src: 'lib/**/*.js',
+        options: {
+          specs: ['spec/SampleAlerts.js', 'spec/**/*Spec.js'],
+          polyfills: ['node_modules/core-js/client/shim.min.js']
+        }
+      }
     }
   })
 
   grunt.registerTask('default', ['clean:precompile', 'ts', 'babel', 'copy', 'clean:postcompile'])
+  grunt.registerTask('test', ['jasmine'])
 }
