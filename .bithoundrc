@@ -1,0 +1,10 @@
+{
+  "ignore": [
+    "**/deps/**",
+    "**/node_modules/**",
+    "**/thirdparty/**",
+    "**/third_party/**",
+    "**/es2015/**",
+    "**/lib/**"
+  ]
+}
